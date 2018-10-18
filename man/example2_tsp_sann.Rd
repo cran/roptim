@@ -2,7 +2,7 @@
 % Please edit documentation in R/RcppExports.R
 \name{example2_tsp_sann}
 \alias{example2_tsp_sann}
-\title{Example 1: Solve Travelling Salesman Problem (TSP) using SANN}
+\title{Example 2: Solve Travelling Salesman Problem (TSP) using SANN}
 \usage{
 example2_tsp_sann(distmat, x)
 }
@@ -56,7 +56,7 @@ text(x, y, labels(eurodist), cex = 0.8)
 ## res  # Near optimum distance around 12842
 
 ## corresponding C++ implementation:
-set.seed(10)  # chosen to get a good soln relatively quickly
+set.seed(4)  # chosen to get a good soln relatively quickly
 res <- example2_tsp_sann(eurodistmat, sq)
 
 tspres <- loc[res$par,]
