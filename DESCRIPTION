@@ -1,7 +1,7 @@
 Package: roptim
 Type: Package
 Title: General Purpose Optimization in R using C++
-Version: 0.1.1
+Version: 0.1.2
 Author: Yi Pan [aut, cre]
 Maintainer: Yi Pan <ypan1988@gmail.com>
 Description: Perform general purpose optimization in R using C++. A unified 
@@ -17,7 +17,9 @@ LinkingTo: Rcpp, RcppArmadillo
 RoxygenNote: 6.0.1
 URL: https://github.com/ypan1988/roptim/
 BugReports: https://github.com/ypan1988/roptim/issues
+Suggests: R.rsp
+VignetteBuilder: R.rsp
 NeedsCompilation: yes
-Packaged: 2018-10-18 15:41:01 UTC; pany
+Packaged: 2018-11-12 20:55:13 UTC; yipan
 Repository: CRAN
-Date/Publication: 2018-10-18 15:50:03 UTC
+Date/Publication: 2018-11-12 21:30:04 UTC
