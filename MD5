@@ -1,9 +1,9 @@
-44ff8d958f980188d18a07e9e169cc91 *DESCRIPTION
+0ae8a9442f254efddfaa81f92c1f680c *DESCRIPTION
 efc8c577b61b850dc7576aa6ce13dcad *NAMESPACE
 fead2e07ea4a20e65e7a3ee243453b41 *R/RcppExports.R
 14d33f156af1ce647b707881c9304324 *R/zzz.R
-6e9f54f8910baf6c8e7e1a7bbd22e417 *build/vignette.rds
-28ccf0658e6e62998e4978ca26a3449a *inst/doc/article.pdf
+96f0bff719e9a7d147a3e8388e53b8c6 *build/vignette.rds
+4a3304ddf9ee1fbf2b774e5b42dc8bd2 *inst/doc/article.pdf
 954281e4c30d61fd631b086c11914b12 *inst/doc/article.pdf.asis
 211fbbbd6d864b6ee5615cda7257e11f *inst/include/applic.h
 fcb19eb16d6993107f84aa16d37fa514 *inst/include/functor.h
@@ -16,7 +16,7 @@ ac246e8c3e5e95e0bdc5fd1871290436 *inst/include/roptim.h
 51f6fbd0dca518b90f11c4a456581cf2 *man/example2_tsp_sann.Rd
 b0dcd6a3efcb5ae285169be94070b38e *man/example3_flb_25_dims_box_con.Rd
 ba760b357ad0b987e2f84e4681472eda *man/example4_wild_fun.Rd
-b1f0ec4d9821972382798fbe3524872d *man/roptim.Rd
+f6066db7e9ef859ad4d578120ca02b48 *man/roptim.Rd
 5bcc5a74bc1be7ebb753e93649dd3aba *src/Makevars
 5bcc5a74bc1be7ebb753e93649dd3aba *src/Makevars.win
 62c36356080a7bc5ba3b0099a0e725af *src/RcppExports.cpp
