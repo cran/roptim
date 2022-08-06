@@ -54,6 +54,7 @@ class RosenNoGrad : public Functor {
 
 //'@title Example 1: Minimize Rosenbrock function using BFGS
 //'@description Minimize Rosenbrock function using BFGS.
+//'@param print whether the results should be printed.
 //'@examples
 //'fr <- function(x) {   ## Rosenbrock Banana function
 //'  x1 <- x[1]
@@ -73,17 +74,28 @@ class RosenNoGrad : public Functor {
 //'example1_rosen_bfgs()
 //'@export
 // [[Rcpp::export]]
-void example1_rosen_bfgs() {
+Rcpp::List example1_rosen_bfgs(bool print = true) {
   Rosen rb;
   Roptim<Rosen> opt("BFGS");
-  opt.control.trace = 1;
+  opt.control.trace = print ? 1 : 0;
   opt.set_hessian(true);
 
   arma::vec x = {-1.2, 1};
   opt.minimize(rb, x);
 
-  Rcpp::Rcout << "-------------------------" << std::endl;
-  opt.print();
+  if (print) {
+    Rcpp::Rcout << "-------------------------" << std::endl;
+    opt.print();
+  }
+
+  return Rcpp::List::create(
+    Rcpp::Named("par") = opt.par(),
+    Rcpp::Named("value") = opt.value(),
+    Rcpp::Named("fncount") = opt.fncount(),
+    Rcpp::Named("grcount") = opt.grcount(),
+    Rcpp::Named("convergence") = opt.convergence(),
+    Rcpp::Named("message") = opt.message(),
+    Rcpp::Named("hessian") = opt.hessian());
 }
 
 //'@title Example 1: Minimize Rosenbrock function using other methods
